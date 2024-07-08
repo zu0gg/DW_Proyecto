@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <style>
+            body
+            {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 50px;
+
+
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 50px;
+                background-image: url("https://paraleloestudio.com/wp-content/uploads/JPS-Architecten-Ivo-Jelinek-GYM-TrainMore-Utrecht-13.jpg"); /* Ruta hacia tu imagen de fondo */
+                background-attachment: fixed;
+                background-size: cover;
+                max-width: 1920px;
+            }
+
+            .testClass{
+                background-color: transparent;
+                backdrop-filter: blur(20px);
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <div>
+                <p>Contáctenos</p>
+
+                <form id="formContactanos" class="testClass" method="post">
+                    <br>
+                    <div class="form-group">
+                        <input id="txtNombre" style="width: 300px;" class="form-control" name="nombre" type="text" placeholder="Nombre" maxlength="100" required />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input id="txtTelefono" style="width: 300px;" class="form-control" type="tel" maxlength="20" pattern="^[0-9]+$" name="telefono" placeholder="Teléfono" />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input id="txtCorreo" style="width: 300px;" class="form-control" type="email" name="correo" placeholder="Correo cliente" required />
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <textarea id="txtMensaje" style="width: 300px;" class="form-control" name="mensaje" placeholder="Mensaje cliente" maxlength="500" required></textarea>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <input id="btnEnviarMensaje" class="btn btn-enviar h6" name="btnEnviarMensaje" value="Envíar" type="button">
+                    </div>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

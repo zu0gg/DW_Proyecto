@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <meta charset="UTF-8">
+    <title>Redireccionar a WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        
+        
+        font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url("https://www.fitnesstech.es/cdn/shop/files/imagen_bicicletas_finalisimo-editada_1920x1080.png?v=1719990327");
+            background-attachment: fixed;
+            background-size: cover;
+            max-width: 1920px;
+        }
+        .testClass{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    }
+
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="testClass">
+        <h1 style="color:white">Redireccionar a WhatsApp de la Empresa</h1>
+        <p style="color:white">Haz clic en el botón para abrir WhatsApp:</p>
+        <button class="whatsapp-button" onclick="irAWhatsApp()">WhatsApp</button>
+    </div>
+    <script>
+        function irAWhatsApp() {
+            var telefono = "50662655587"; 
+            var mensaje = "Hola, estoy interesado adquirir la membresia.";
+            var url = "https://wa.me/"+ telefono + "?text=" + mensaje;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
