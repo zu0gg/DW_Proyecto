@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendario</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {
+                background-color: #000000;
+                color: white;
+                font-family: Arial, sans-serif;
+            }
+            .schedule-table {
+                margin: auto;
+                border-collapse: collapse;
+            }
+            .schedule-table th, .schedule-table td {
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            .time-slot {
+                background-color: #F2AF29;
+                color: #000000; /* Change text color to black */
+            }
+            .class-slot {
+                background-color: #AD343E;
+                color: white;
+            }
+            .empty-slot {
+                background-color: #DBD7B5;
+            }
+            .header {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .header h1 {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Clases Grupales</h1>
+            <p>Lunes Martes Miércoles Jueves Viernes Sábado Domingo</p>
+        </div>
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-slot">6:00AM</td>
+                    <td class="class-slot">Crossfit</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">7:00AM</td>
+                    <td class="empty-slot"></td>
+                    <td class="class-slot">Boxeo</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">8:00AM</td>
+                    <td class="class-slot">Yoga</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">9:00AM</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="class-slot">Pilates</td>
+                    <td class="empty-slot"></td>
+                    <td class="class-slot">Yoga</td>
+                    <td class="empty-slot"></td>
+                    <td class="class-slot">Spinning</td>
+                </tr>
+                <tr>
+                    <td class="time-slot">10:00AM</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="class-slot">Aerobicos</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">11:00AM</td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="empty-slot"></td>
+                    <td class="class-slot">Pesas</td>
+                    <td class="empty-slot"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
