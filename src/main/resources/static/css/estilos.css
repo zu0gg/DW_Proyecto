@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+    
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpaperscraft.com%2Fimage%2Fsingle%2Fgym_dumbbells_inventory_219519_1920x1080.jpg&f=1&nofb=1&ipt=3841bd62d641aaf24f54cfaee3e96e3578fd7adbf6fe545b0d1ef2f1200e1eb5&ipo=images');
+
+    
+    height: 100%;
+
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a {
+    color: white;
+}
+
+.social-buttons a {
+    margin: 0 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.social-buttons a:hover {
+    color: #ddd;
+}
+
+
