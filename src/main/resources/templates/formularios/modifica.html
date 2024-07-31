@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1 th:text="${formulario.idFormulario} == null ? 'Nuevo Formulario' : 'Modificar Formulario'"></h1>
+        <form th:action="@{/formulario/guardar}" th:object="${formulario}" method="post">
+            <input type="hidden" th:field="*{idFormulario}" />
+            <label for="nombre">Nombre:</label>
+            <input type="text" th:field="*{nombre}" />
+            <br />
+            <label for="telefono">Teléfono:</label>
+            <input type="text" th:field="*{telefono}" />
+            <br />
+            <label for="correoCliente">Correo:</label>
+            <input type="email" th:field="*{correoCliente}" />
+            <br />
+            <label for="mensajeCliente">Mensaje:</label>
+            <textarea th:field="*{mensajeCliente}"></textarea>
+            <br />
+            <button type="submit">Guardar</button>
+        </form>
+        <a th:href="@{/formulario/listado}">Volver al Listado</a>
+    </body>
+</html>
+

@@ -10,14 +10,14 @@ import lombok.Data;
  */
 @Data // Automaticamente crear los set y get
 @Entity
-@Table (name="")
+@Table (name="formularios")
 public class Formulario implements Serializable {
     
     private static final long serialVersionUID = 1L;
     
     @Id
     @GeneratedValue (strategy = GenerationType. IDENTITY)
-    @Column (name = "id formulario")
+    @Column (name = "id_formulario")
     private Long idFormulario;
     private String nombre;
     private String telefono; 
@@ -26,7 +26,7 @@ public class Formulario implements Serializable {
     
     @OneToMany
     @JoinColumn(name="id_formulario", insertable = false, updatable = false)
-    List<Formulario> formularios;
+    List<Formulario> formulario;
 
     public Formulario() {
     }

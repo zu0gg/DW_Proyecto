@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.gym.controler;
 import com.gym.domain.Formulario;
 import com.gym.service.FormularioService;
@@ -12,8 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 @Slf4j
@@ -28,23 +22,23 @@ public class FormularioController {
         var formula = formularioService.getFormularios();
         model.addAttribute("formularios", formula);
         model.addAttribute("totalFormularios", formula.size());
-        return "/categoria/listado";
+        return "/formulario/listado";
     }
     
     @GetMapping("/nuevo")
     public String formularioNuevo(Formulario categoria) {
-        return "/categoria/modifica";
+        return "/formulario/modifica";
     }
 
     @PostMapping("/guardar")
-    public String formularioGuardar(Formulario categoria) { 
-        formularioService.save(categoria);
+    public String formularioGuardar(Formulario formulario) { 
+        formularioService.save(formulario);
         return "redirect:/formulario/listado";
     }
 
     @GetMapping("/eliminar/{idFormulario}")
-    public String formularioEliminar(Formulario categoria) {
-        formularioService.delete(categoria);
+    public String formularioEliminar(Formulario formulario) {
+        formularioService.delete(formulario);
         return "redirect:/formulario/listado";
     }
 

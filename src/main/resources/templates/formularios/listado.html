@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Listado de Formularios</title>
+    </head>
+    <body>
+        <h1>Listado de Formularios</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Mensaje</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="formulario : ${formularios}">
+                    <td th:text="${formulario.idFormulario}"></td>
+                    <td th:text="${formulario.nombre}"></td>
+                    <td th:text="${formulario.telefono}"></td>
+                    <td th:text="${formulario.correoCliente}"></td>
+                    <td th:text="${formulario.mensajeCliente}"></td>
+                    <td>
+                        <a th:href="@{/formulario/modificar/{idFormulario}(idFormulario=${formulario.idFormulario})}">Modificar</a>
+                        <a th:href="@{/formulario/eliminar/{idFormulario}(idFormulario=${formulario.idFormulario})}">Eliminar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a th:href="@{/formulario/nuevo}">Nuevo Formulario</a>
+    </body>
+</html>
+
