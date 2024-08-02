@@ -23,4 +23,17 @@ public class Empleado implements Serializable {
     private String telefono;
     private String puesto;
     private LocalDate fechaContratacion;
+
+    public Empleado() {
+    }
+
+    public Empleado(String nombre, String apellido, String correo, String telefono, String puesto, LocalDate fechaContratacion) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.correo = correo;
+        this.telefono = telefono;
+        this.puesto = puesto;
+        this.fechaContratacion = fechaContratacion;
+    }
+
 }

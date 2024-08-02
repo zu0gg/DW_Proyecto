@@ -21,4 +21,15 @@ public class Clase implements Serializable {
     private String descripcion;
     private LocalTime horario;
     private int duracion;
+
+    public Clase() {
+    }
+
+    public Clase(String nombre, String descripcion, LocalTime horario, int duracion) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.horario = horario;
+        this.duracion = duracion;
+    }
+
 }

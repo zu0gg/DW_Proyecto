@@ -26,4 +26,14 @@ public class Asistencia implements Serializable {
     private Clase clase;
 
     private LocalDate fecha;
+
+    public Asistencia() {
+    }
+
+    public Asistencia(Cliente cliente, Clase clase, LocalDate fecha) {
+        this.cliente = cliente;
+        this.clase = clase;
+        this.fecha = fecha;
+    }
+
 }

@@ -20,4 +20,15 @@ public class Membresia implements Serializable {
     private String tipo;
     private BigDecimal precio;
     private int duracion;
+
+    public Membresia() {
+    }
+
+    public Membresia(String tipo, BigDecimal precio, int duracion) {
+        this.tipo = tipo;
+        this.precio = precio;
+        this.duracion = duracion;
+    }
+    
+    
 }
